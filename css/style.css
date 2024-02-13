@@ -58,10 +58,7 @@ li{
 .navbar__flex-menu li:hover {
     opacity: 0.5;
 }
-.header {
-}
 .product__flex_card {
-   
     height: 760px;
     margin-top: 48px;
     background-image: url(../img/main.png);
@@ -138,19 +135,6 @@ li{
     max-height: 500px;
     width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
 }
-/* .tovar__flex_items:nth-child(1) {
-    color: var(--text-color);
-    max-width: 370px;
-    max-height: 500px;
-}
-.tovar__flex_items:nth-child(2) {
-    max-width: 370px;
-    max-height: 500px;
-}
-.tovar__flex_items:nth-child(3) {
-    max-width: 370px;
-    max-height: 500px;
-} */
 .tovar__background {
     background-color: var(--text-color);
     width: 370px;
@@ -174,9 +158,250 @@ li{
     line-height: 22px;
     text-align: center;
 }
-.tovar__text_items:nth-child(2) {
+.brand {
+    width: 100%;
 }
-
+.brand_header {
+    text-align: center;
+}
+.brand_h4 {
+    color: var(--text-color);
+    font-family: 'Oswald',sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 59px;
+    margin: 0;
+}
+.brand_p {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.brand_flex-inf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.brand_inf-items {
+    display: flex;
+    width: 455px;
+    height: 321px; 
+    box-sizing: border-box; 
+}
+.brand_inf-items:nth-child(1) {
+    margin-top: 140px;
+    margin-left: 200px;
+}
+.brand_inf-items:nth-child(2) {
+    margin-top: 140px;
+}
+.brand_inf-items:nth-child(3) {
+    margin-left: 200px;
+    margin-top: 30px;
+    height: 280px;
+}
+.brand_inf-items:nth-child(4) {
+    margin-top: 30px;
+}
+.brand_inf-img {
+    margin-top: 25px;
+}
+.brand_inf-img:nth-child(3) {
+    margin-top: 33px;
+}
+.brand_inf {
+    margin-left: 12px;
+}
+.brand_h5 {
+    color: var(--text-color);
+    font-family: 'Oswald',sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    margin: 0;
+}
+.brand_inf-text {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 187.5%;
+    letter-spacing: -0.5%;
+    width: 300px;
+    height: 196px;
+    margin-top: 11px;
+}
+.working-hours {
+    width: 87%;
+    height: 455px;
+    margin: 0 auto;
+    margin-top: 114px;
+    background-image: url(../img/girlphone\ 1.png);
+    background-color: rgba(44, 56, 166, 0.3); /* задаем фоновый цвет (фиолетовый) */
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.w-h_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hours_h6 {
+    color: var(--text-white-color);
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    margin: 10px 0 51px 0;
+}
+.w-h_content_p {
+    width: 178px;
+    height: 140px;
+}
+.hours_text {
+    color: var(--text-white-color);
+    margin: 0;
+    padding-bottom: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.hours_text_second {
+    width: 142px;
+    height: 84px;
+    color: var(--text-white-color);
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 187.5%;
+    padding-left: 10px;
+}
+.contact {
+    background-color: var(--text-color);
+    margin: 49px 89px 0 89px;
+}
+.contact_flex {
+    display: flex;
+    padding-top: 39px;
+}
+.contact-info {
+    color:var(--text-white-color);
+    width: 50%;
+    text-align: center;
+}
+.contact_h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 59px;
+    margin: 0;
+    margin-left: 22px;
+}
+.contact_text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.contact_text1 {
+    margin-top: 21px;
+    margin-left: 22px;
+}
+.contact_text2 {
+    margin-left: 22px;
+    margin-top: 34px;
+}
+.contact_text3 {
+    margin-left: 22px;
+    margin-top: 37px;
+}
+.message-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 50%;
+    width: 541.6px;
+    height: 307px;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 260px;
+    height: 22px;
+    background-color: transparent;
+}
+input:focus{
+    outline: none;
+}
+textarea{
+    background-color: transparent;
+}
+::placeholder{
+    color:var(--text-white-color)
+}
+.full-width {
+     grid-column: 1 / span 2;
+}
+.input[type="text"],
+.input[type="tel"],
+.input[type="email"],
+.textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+input[type="text"]:invalid,
+input[type="tel"]:invalid,
+input[type="email"]:invalid,
+textarea:invalid {
+    border: none; /* Убираем границу */
+    border-bottom: 1px solid rgb(255, 255, 255) /* Добавляем нижнее подчеркивание */
+}
+button {
+    width: 539px;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+  background-color: black
+}
+.placeholder-on-focus {
+    color: #7a5b5b; /* Цвет текста для placeholder */
+  }
+  @media screen and (min-width: 1401px) and (max-width: 1920px) { 
+    .brand_flex-inf{
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .brand_inf-items:nth-child(1){
+       margin-left: 0;   
+    }
+    .brand_inf-items:nth-child(3){
+        margin-top: 140px;
+        margin-left: 0;   
+     }
+     .brand_inf-items:nth-child(4){
+        margin-top: 140px;
+        margin-left: 0;   
+     }
+     .brand_inf-text:nth-child(3){
+        height: 280px;
+     }
+}
 @media screen and (max-width: 1600px) {
     .navbar__flex {
         justify-content: space-between;
@@ -189,17 +414,8 @@ li{
         margin: 0 150px 0 0;
     }
 }
-/* @media screen and (max-width: 1920px) {
-    .tovar__flex_content {
-        justify-content: space-between;
-    }
-    .tovar__flex_items {
-    
-    }
-} */
 @media screen and (max-width: 1399px) {
     .tovar__flex_content {
-        /* flex-wrap: wrap; */
         --elements: 2;
     }
 }
@@ -217,6 +433,30 @@ li{
         flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 1180px) {
+    .brand_p{
+        margin-bottom: 40px;
+    }
+    .brand_inf-items{
+        margin: 0;
+    }
+    .brand_flex-inf{
+        justify-content: center;
+    }
+    .brand_inf-items:nth-child(1){
+        margin: 0;       
+    }
+    .brand_inf-items:nth-child(2) {
+        margin: 0;
+    }
+    .brand_inf-items:nth-child(3) {
+        margin: 0;
+        height: 330px;
+    }
+    .brand_inf-items:nth-child(4) {
+        margin: 0;
+    }
+}
 @media screen and (max-width: 980px) {
     .tovar__flex_content {
         --elements: 1;
@@ -226,7 +466,19 @@ li{
     .navbar__flex-menu {
         gap: 30px;
         margin: 0 30px 0 30px;
-}
+    }
+    .brand_inf-items:nth-child(1){
+        margin: 0;
+    }
+    .brand_inf-items:nth-child(2){
+       margin: 0;
+    }
+    .brand_inf-items:nth-child(3){
+       margin: 0;
+    }
+    .brand_inf-items:nth-child(4){
+       margin: 0;
+    }
 }
 @media screen and (max-width: 550px) {
     .tovar_inner {
@@ -245,7 +497,6 @@ li{
     .tovar__flex_items {
         max-width: 250px;
         max-height: 315px;
-        /* margin-bottom: 30px; */
         margin: 0 0 25px 0;
     }
     .tovar__background {
@@ -259,5 +510,49 @@ li{
     .tovar__text_items{
         font-size: 15px;
         margin: 0;
+    }
+    .brand_h4 {
+        font-size: 25px;
+        font-weight: 200;
+        line-height: 39px;
+        margin: 0;
+    }
+    .brand_p {
+        color: var(--text-color);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    .brand_inf-img {
+        width: 90px;
+        height: 90px;
+    }
+    .brand_inf-text{
+        width: 220px;
+        height: 270px;
+        font-size: 14px;
+    }
+    .brand_flex-inf {
+        gap: 30px;
+    }
+    .brand_inf-items{
+        justify-content: center;
+    }
+    .brand_inf-items:nth-child(1){  
+        height: 300px;
+        margin: 0;
+    }
+    .brand_inf-items:nth-child(2){
+       margin: 0;
+       height: 300px;
+    }
+    .brand_inf-items:nth-child(3){
+       margin: 0;
+       height: 378px;
+    }
+    .brand_inf-items:nth-child(4){
+        margin: 0;
+        height: 300px;
     }
 }
